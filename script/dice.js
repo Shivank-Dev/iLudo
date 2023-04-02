@@ -48,7 +48,11 @@ const spinDice = (requestedPlayer) => {
   }, 100);
 };
 
-const gotiJeevatKaro = (requestedPiece) => {
+const openPlayerPiece = (requestedPiece) => {
+  const border = document.getElementsByClassName("border");
+  for (let p of border) {
+    p.style.display = "none";
+  }
     if (!isPlayerActive) {
         return;
     }

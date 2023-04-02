@@ -12,7 +12,7 @@
       <div class="dice-area">
         <div class="grid-item">
           <div class="player-1-dice flex">
-            <div class="piece-wrapper">
+            <div class="dummy-piece-wrapper">
               <div class="dummy-piece">
                 <img src="./assets/red.png" alt="" />
               </div>
@@ -27,7 +27,7 @@
             <div class="dice-wrapper cursor-pointer">
               <img src="./assets/dice-4.png" alt="" />
             </div>
-            <div class="piece-wrapper">
+            <div class="dummy-piece-wrapper">
               <div class="dummy-piece">
                 <img src="./assets/green.png" alt="" />
               </div>
@@ -37,7 +37,7 @@
       </div>
       <div class="ludo-board">
         <div class="player-1">
-          <div class="piece-home-area">
+          <div class="player-pieces">
             <div class="piece-outer red">
               <div class="player1-piece">
                 <div class="border hidden"></div>
@@ -78,7 +78,7 @@
         </div>
         <div class="step"></div>
         <div class="player-2">
-          <div class="piece-home-area">
+          <div class="player-pieces">
             <div class="piece-outer green">
               <div class="piece-inner">
                 <div class="border hidden"></div>
@@ -182,7 +182,7 @@
         </div>
         <div class="step"></div>
         <div class="player-3">
-          <div class="piece-home-area">
+          <div class="player-pieces">
             <div class="piece-outer blue">
               <div class="piece-inner">
                 <div class="border hidden"></div>
@@ -221,9 +221,9 @@
         <div class="step blue"></div>
         <div class="step"></div>
         <div class="player-4">
-          <div class="piece-home-area">
+          <div class="player-pieces">
             <div class="piece-outer yellow">
-              <div class="piece-inner" id="player4-piece1" onclick="gotiJeevatKaro('player4-piece1')">
+              <div class="piece-inner" id="player4-piece1" onclick="openPlayerPiece('player4-piece1')">
                 <div class="border hidden"></div>
                 <div class="piece cursor-pointer">
                   <img src="./assets/yellow.png" alt="" />
@@ -231,7 +231,7 @@
               </div>
             </div>
             <div class="piece-outer yellow">
-              <div class="piece-inner">
+              <div class="piece-inner" id="player4-piece1" onclick="openPlayerPiece('player4-piece2')">
                 <div class="border hidden"></div>
                 <div class="piece cursor-pointer">
                   <img src="./assets/yellow.png" alt="" />
@@ -239,7 +239,7 @@
               </div>
             </div>
             <div class="piece-outer yellow">
-              <div class="piece-inner">
+              <div class="piece-inner" id="player4-piece1" onclick="openPlayerPiece('player4-piece3')">
                 <div class="border hidden"></div>
                 <div class="piece cursor-pointer">
                   <img src="./assets/yellow.png" alt="" />
@@ -247,7 +247,7 @@
               </div>
             </div>
             <div class="piece-outer yellow">
-              <div class="piece-inner">
+              <div class="piece-inner" id="player4-piece1" onclick="openPlayerPiece('player4-piece2')">
                 <div class="border hidden"></div>
                 <div class="piece cursor-pointer">
                   <img src="./assets/yellow.png" alt="" />
@@ -281,7 +281,7 @@
       <div class="dice-area">
         <div class="grid-item">
           <div class="player-1-dice flex">
-            <div class="piece-wrapper">
+            <div class="dummy-piece-wrapper">
               <div class="dummy-piece">
                 <img src="./assets/blue.png" alt="" />
               </div>
@@ -299,7 +299,7 @@
             <div class="dice-wrapper cursor-pointer" onclick="spinDice('yellow')">
               <img src="./assets/dice-5.png" alt="" id="player4" />
             </div>
-            <div class="piece-wrapper">
+            <div class="dummy-piece-wrapper">
               <div class="dummy-piece">
                 <img src="./assets/yellow.png" alt="" />
               </div>

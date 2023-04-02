@@ -1,9 +1,23 @@
+:root {
+    --blue: #0696de;
+    --green: #00a041;
+    --red: #ed1729;
+    --yellow: #ffdd09;
+    --black: #000;
+    --darkgray: #424242;
+    --dodgerBlue: #483dff;
+    --skyblue: #a4f0ff;
+    --steelBlue: #2b60d9;
+    --white: #f2f2f2
+}
+
 
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 .ludo-container {
     display: flex;
     flex-direction: column;
@@ -22,32 +36,122 @@ body {
     width: 75vmin;
     grid-template-columns: repeat(15, 5vmin);
     grid-template-rows: repeat(15,5vmin);
-    border: 1px solid #000;
+    border: 1px solid var(--black);
 }
+
+/* Player Start */
 
 .player-1 {
     position: relative;
     grid-column: 1/7;
     grid-row: 1/7;
-    border: 6vmin solid #ed1729;
-    outline: 1px solid black;
+    border: 6vmin solid var(--red);
+    outline: 1px solid var(--black);
     z-index: 3333;
 }
 
-.piece-home-area {
+.player-2 {
+    position: relative;
+    grid-column: 10/-1;
+    grid-row: 1/7;
+    border: 6vmin solid var(--green);
+    outline: 1px solid var(--black);
+    z-index: 3333;
+}
+
+.player-3 {
+    position: relative;
+    grid-column: 1/7;
+    grid-row: 10/17;
+    border: 6vmin solid var(--blue);
+    outline: 1px solid var(--black);
+    z-index: 3333;
+}
+
+.player-4 {
+    position: relative;
+    grid-column: 10/-1;
+    grid-row: 10/17;
+    border: 6vmin solid var(--yellow);
+    outline: 1px solid var(--black);
+    z-index: 3333;
+}
+
+.player-stop img {
+    height: 6vmin;
+    width: 6vmin;
+}
+
+.player-home {
+    grid-column: 7/10;
+    grid-row: 7/10;
+    border-left: 8vmin solid var(--red);
+    border-top: 8vmin solid var(--green);
+    border-right: 7vmin solid var(--yellow);
+    border-bottom: 7vmin solid var(--blue);
+    outline: 1px solid #000;
+    z-index: 3333;
+}
+
+/* Player End */
+
+
+
+/* Step Start */
+
+
+.step {
+    outline: 0.5px solid var(--darkgray);
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-arrow {
     height: 4vmin;
     width: 4vmin;
-    /* border-radius: 50%; */
+}
+
+
+/* Step End */
+
+
+
+
+/* Player piece start  */
+
+.piece {
+    position: relative;
+    bottom: 1.2vmin;
+  
+}
+
+.piece-outer {
+    position: relative;
+    border-radius: 50%;
+    height: 5vmin;
+    width: 5vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+.piece-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-pieces {
+    height: 4vmin;
+    width: 4vmin;
     display: grid;
-    background-color: white;
+    background-color: var(--white);
     outline: 1px solid;
-}
-
-.red {
-    background-color: #ed1729 !important;
-}
-
-.piece-home-area {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -56,81 +160,46 @@ body {
     width: 100%;
 }
 
-.piece-outer {
-    position: relative;
-    border-radius: 50%;
-    height: 5vmin;
-    width: 5vmin;
-    background-color: #ed1729;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgba(0,0,0,0.5);
+.piece img {
+    height: 6vmin;
+    width: 4vmin;
 }
 
-.step {
-    outline: 0.5px solid #424242;
-    background-color: #f2f2f2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.animate-player-piece {
+    outline-style: dashed;
+    animation: spin infinite linear 2s;
 }
 
-.player-2 {
-    position: relative;
-    grid-column: 10/-1;
-    grid-row: 1/7;
-    border: 6vmin solid #00a041;
-    outline: 1px solid black;
-    z-index: 3333;
+/* Player piece end  */
+
+
+
+/* player colors start */
+
+.red {
+    background-color: var(--red) !important;
 }
 
 .green {
-    background: #00a041;
-}
-.player-home {
-    grid-column: 7/10;
-    grid-row: 7/10;
-    border-left: 8vmin solid #ed1729;
-    border-top: 8vmin solid #00a041;
-    border-right: 7vmin solid #ffdd09;
-    border-bottom: 7vmin solid #0696de;
-    outline: 1px solid #000;
-    z-index: 3333;
-}
-
-.player-3 {
-    position: relative;
-    grid-column: 1/7;
-    grid-row: 10/17;
-    border: 6vmin solid #0696de;
-    outline: 1px solid black;
-    z-index: 3333;
-}
-
-.player-4 {
-    position: relative;
-    grid-column: 10/-1;
-    grid-row: 10/17;
-    border: 6vmin solid #ffdd09;
-    outline: 1px solid black;
-    z-index: 3333;
+    background: var(--green) !important;
 }
 
 .yellow {
-    background: #ffdd09;
+    background: var(--yellow) !important;
 }
 
 .blue {
-    background: #0696de;
+    background: var(--blue) !important;
 }
-.dice-area {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 46vmin;
-    margin: 1vmin 0;
-}
-.piece-wrapper {
+
+/* player colors end */
+
+
+
+
+/* dummy piece or outer piece start */
+
+.dummy-piece-wrapper {
     height: 6vmin;
     width: 6vmin;
     border: 1px solid #000;   
@@ -139,14 +208,37 @@ body {
     justify-content: center;
 }
 
-.piece-wrapper:nth-child(even) {
+.dummy-piece-wrapper:nth-child(even) {
     border-left: none;
-    background: linear-gradient(90deg, #483dff 0%, rgba(164,240,255,1) 2%, rgba(43,96,217,1) 100%);
+    background: linear-gradient(90deg, var(--dodgerBlue) 0%, var(--skyblue) 2%, var(--steelBlue) 100%);
 }
-.piece-wrapper:nth-child(odd) {
+.dummy-piece-wrapper:nth-child(odd) {
     border-right: none;
-    background: linear-gradient(90deg, #483dff 0%,rgba(43,96,217,1) 35%, rgba(164,240,255,1) 100%);
+    background: linear-gradient(90deg, var(--dodgerBlue) 0%, var(--steelBlue) 35%, var(--skyblue) 100%);
 }
+
+.dummy-piece {
+    position: relative;
+    bottom: 1.5vmin
+}
+
+.dummy-piece img {
+    height: 6vmin;
+    width: 4vmin;
+}
+
+/* dummy piece or outer piece end */
+
+
+/* Dice Start */
+
+.dice-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 46vmin;
+    margin: 1vmin 0;
+}
+
 .dice-wrapper {
     height: 6vmin;
     width: 6vmin;
@@ -156,35 +248,17 @@ body {
     padding: 1vmin;
 }
 
-.flex {
-    display: flex;
-    align-items: center;
-}
-
-.grid-item {
-    /* border: 1px solid black; */
-    padding: 1vmin;
-}
-
 .dice-wrapper img {
     height: 6vmin;
-    background: white;
+    background: var(--white);
     border-radius: 1vmin;
 }
 
-.player-stop img {
-    height: 6vmin;
-    width: 6vmin;
-}
+/* Dice End */
 
-.piece {
-    /* height: 2.5vmin;
-    width: 2.5vmin;
-    border: 5px solid white; */
-    position: relative;
-    bottom: 1.2vmin;
-  
-}
+
+
+/* Utilities Start */
 
 .border {
     position: absolute;
@@ -200,46 +274,26 @@ body {
     visibility: hidden !important;
 }
 
-.piece-inner {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.dummy-piece {
-    position: relative;
-    bottom: 1.5vmin
-}
-
-.dummy-piece img {
-    height: 6vmin;
-    width: 4vmin;
-}
-
-.piece img {
-    height: 6vmin;
-    width: 4vmin;
-}
-
-.animate-player-piece {
-    outline-style: dashed;
-    animation: spin infinite linear 2s;
-}
-
-.red-outline {
-    outline: 2px solid red;
-}
-
-.step-arrow {
-    height: 4vmin;
-    width: 4vmin;
-}
-
 .cursor-pointer {
     cursor: pointer;
 }
+
+.red-outline {
+    outline: 2px solid var(--red);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.grid-item {
+    /* border: 1px solid black; */
+    padding: 1vmin;
+}
+
+/* Utilities End */
+
 
 @keyframes spin {
     0% {
