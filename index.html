@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iLudo</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body cz-shortcut-listen="true">
+    <div class="ludo-container">
+      <div class="dice-area">
+        <div class="grid-item">
+          <div class="player-1-dice flex">
+            <div class="piece-wrapper">
+              <div class="dummy-piece">
+                <img src="./assets/red.png" alt="" />
+              </div>
+            </div>
+            <div class="dice-wrapper cursor-pointer">
+              <img src="./assets/dice-1.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="player-2-dice flex">
+            <div class="dice-wrapper cursor-pointer">
+              <img src="./assets/dice-4.png" alt="" />
+            </div>
+            <div class="piece-wrapper">
+              <div class="dummy-piece">
+                <img src="./assets/green.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ludo-board">
+        <div class="player-1">
+          <div class="piece-home-area">
+            <div class="piece-outer red">
+              <div class="player1-piece">
+                <div class="border hidden"></div>
+                <div class="piece">
+                  <img src="./assets/red.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="piece-outer red">
+              <div class="player1-piece">
+                <div class="border hidden"></div>
+                <div class="piece">
+                  <img src="./assets/red.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="piece-outer red">
+              <div class="player1-piece">
+                <div class="border hidden"></div>
+                <div class="piece">
+                  <img src="./assets/red.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="piece-outer red">
+              <div class="player1-piece">
+                <div class="border hidden"></div>
+                <div class="piece">
+                  <img src="./assets/red.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="step"></div>
+        <div class="step">
+          <img src="./assets/down-arrow.png" alt="" class="step-arrow" />
+        </div>
+        <div class="step"></div>
+        <div class="player-2">
+          <div class="piece-home-area">
+            <div class="piece-outer green">
+              <div class="piece-inner">
+                <div class="border hidden"></div>
+                <div class="piece">
+                  <img src="./assets/green.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="piece-outer green">
+              <div class="piece-inner">
+                <div class="border hidden"></div>
+                <div class="piece">
+                  <img src="./assets/green.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="piece-outer green">
+              <div class="piece-inner">
+                <div class="border hidden"></div>
+                <div class="piece">
+                  <img src="./assets/green.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="piece-outer green">
+              <div class="piece-inner">
+                <div class="border hidden"></div>
+                <div class="piece">
+                  <img src="./assets/green.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="step"></div>
+        <div class="step green"></div>
+        <div class="step green player-stop">
+          <img src="./assets/star.png" alt="" />
+        </div>
+        <div class="step player-stop">
+          <img src="./assets/star.png" alt="" />
+        </div>
+        <div class="step green"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step green"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step green"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step green"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step red player-stop">
+          <img src="./assets/star.png" alt="" />
+        </div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="player-home"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step player-stop">
+          <img src="./assets/star.png" alt="" />
+        </div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step">
+          <img src="./assets/right-arrow.png" alt="" class="step-arrow" />
+        </div>
+        <div class="step red"></div>
+        <div class="step red"></div>
+        <div class="step red"></div>
+        <div class="step red"></div>
+        <div class="step red"></div>
+        <div class="step yellow"></div>
+        <div class="step yellow"></div>
+        <div class="step yellow"></div>
+        <div class="step yellow"></div>
+        <div class="step yellow"></div>
+        <div class="step">
+          <img src="./assets/left-arrow.png" alt="" class="step-arrow" />
+        </div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step player-stop">
+          <img src="./assets/star.png" alt="" />
+        </div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step yellow player-stop">
+          <img src="./assets/star.png" alt="" />
+        </div>
+        <div class="step"></div>
+        <div class="player-3">
+          <div class="piece-home-area">
+            <div class="piece-outer blue">
+              <div class="piece-inner">
+                <div class="border hidden"></div>
+                <div class="piece">
+                  <img src="./assets/blue.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="piece-outer blue">
+              <div class="piece-inner">
+                <div class="border hidden"></div>
+                <div class="piece">
+                  <img src="./assets/blue.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="piece-outer blue">
+              <div class="piece-inner">
+                <div class="border hidden"></div>
+                <div class="piece">
+                  <img src="./assets/blue.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="piece-outer blue">
+              <div class="piece-inner">
+                <div class="border hidden"></div>
+                <div class="piece">
+                  <img src="./assets/blue.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="step"></div>
+        <div class="step blue"></div>
+        <div class="step"></div>
+        <div class="player-4">
+          <div class="piece-home-area">
+            <div class="piece-outer yellow">
+              <div class="piece-inner" id="player4-piece1" onclick="gotiJeevatKaro('player4-piece1')">
+                <div class="border hidden"></div>
+                <div class="piece cursor-pointer">
+                  <img src="./assets/yellow.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="piece-outer yellow">
+              <div class="piece-inner">
+                <div class="border hidden"></div>
+                <div class="piece cursor-pointer">
+                  <img src="./assets/yellow.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="piece-outer yellow">
+              <div class="piece-inner">
+                <div class="border hidden"></div>
+                <div class="piece cursor-pointer">
+                  <img src="./assets/yellow.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="piece-outer yellow">
+              <div class="piece-inner">
+                <div class="border hidden"></div>
+                <div class="piece cursor-pointer">
+                  <img src="./assets/yellow.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="step"></div>
+        <div class="step blue"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step blue"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step blue"></div>
+        <div class="step player-stop">
+          <img src="./assets/star.png" alt="" />
+        </div>
+        <div class="step blue player-stop">
+          <img src="./assets/star.png" alt="" />
+        </div>
+        <div class="step blue"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step">
+          <img src="./assets/up-arrow.png" alt="" class="step-arrow" />
+        </div>
+        <div class="step"></div>
+      </div>
+      <div class="dice-area">
+        <div class="grid-item">
+          <div class="player-1-dice flex">
+            <div class="piece-wrapper">
+              <div class="dummy-piece">
+                <img src="./assets/blue.png" alt="" />
+              </div>
+              <audio controls id="spin" hidden="">
+                <source src="./assets/dice.mp3" type="audio/mp3" />
+              </audio>
+            </div>
+            <div class="dice-wrapper cursor-pointer">
+              <img src="./assets/dice-6.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="player-2-dice flex">
+            <div class="dice-wrapper cursor-pointer" onclick="spinDice('yellow')">
+              <img src="./assets/dice-5.png" alt="" id="player4" />
+            </div>
+            <div class="piece-wrapper">
+              <div class="dummy-piece">
+                <img src="./assets/yellow.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script/dice.js"></script>
+    <!-- <script>
+      $step = document.getElementsByClassName("step");
+      for(var i = 0; $step.length; i++) {
+        if ($step[i].textContent.includes("hh")) {
+        $step[i].innerHTML = ""
+        }
+      }
+    </script> -->
+  </body>
+</html>
