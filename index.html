@@ -18,14 +18,14 @@
               </div>
             </div>
             <div class="dice-wrapper cursor-pointer">
-              <img src="./assets/dice-1.png" alt="" />
+              <img src="./assets/dice-1.png" alt="" class="dice-btn" diceplayerid="player1"/>
             </div>
           </div>
         </div>
         <div class="grid-item">
           <div class="player-2-dice flex">
             <div class="dice-wrapper cursor-pointer">
-              <img src="./assets/dice-4.png" alt="" />
+              <img src="./assets/dice-4.png" alt="" class="dice-btn" diceplayerid="player2"/>
             </div>
             <div class="dummy-piece-wrapper">
               <div class="dummy-piece">
@@ -39,7 +39,7 @@
         <div class="player-1">
           <div class="player-pieces">
             <div class="piece-outer red">
-              <div class="player1-piece">
+              <div class="player-piece" playerId="player1" piece="1">
                 <div class="border hidden"></div>
                 <div class="piece">
                   <img src="./assets/red.png" alt="" />
@@ -47,7 +47,7 @@
               </div>
             </div>
             <div class="piece-outer red">
-              <div class="player1-piece">
+              <div class="player-piece" playerId="player1" piece="2">
                 <div class="border hidden"></div>
                 <div class="piece">
                   <img src="./assets/red.png" alt="" />
@@ -55,7 +55,7 @@
               </div>
             </div>
             <div class="piece-outer red">
-              <div class="player1-piece">
+              <div class="player-piece" playerId="player1" piece="3">
                 <div class="border hidden"></div>
                 <div class="piece">
                   <img src="./assets/red.png" alt="" />
@@ -63,7 +63,7 @@
               </div>
             </div>
             <div class="piece-outer red">
-              <div class="player1-piece">
+              <div class="player-piece" playerId="player1" piece="4">
                 <div class="border hidden"></div>
                 <div class="piece">
                   <img src="./assets/red.png" alt="" />
@@ -80,7 +80,7 @@
         <div class="player-2">
           <div class="player-pieces">
             <div class="piece-outer green">
-              <div class="piece-inner">
+              <div class="player-piece" playerId="player2" piece="1">
                 <div class="border hidden"></div>
                 <div class="piece">
                   <img src="./assets/green.png" alt="" />
@@ -88,7 +88,7 @@
               </div>
             </div>
             <div class="piece-outer green">
-              <div class="piece-inner">
+              <div class="player-piece" playerId="player2" piece="2">
                 <div class="border hidden"></div>
                 <div class="piece">
                   <img src="./assets/green.png" alt="" />
@@ -96,7 +96,7 @@
               </div>
             </div>
             <div class="piece-outer green">
-              <div class="piece-inner">
+              <div class="player-piece" playerId="player2" piece="3">
                 <div class="border hidden"></div>
                 <div class="piece">
                   <img src="./assets/green.png" alt="" />
@@ -104,7 +104,7 @@
               </div>
             </div>
             <div class="piece-outer green">
-              <div class="piece-inner">
+              <div class="player-piece" playerId="player2" piece="4">
                 <div class="border hidden"></div>
                 <div class="piece">
                   <img src="./assets/green.png" alt="" />
@@ -184,7 +184,7 @@
         <div class="player-3">
           <div class="player-pieces">
             <div class="piece-outer blue">
-              <div class="piece-inner">
+              <div class="player-piece" playerId="player3" piece="1">
                 <div class="border hidden"></div>
                 <div class="piece">
                   <img src="./assets/blue.png" alt="" />
@@ -192,7 +192,7 @@
               </div>
             </div>
             <div class="piece-outer blue">
-              <div class="piece-inner">
+              <div class="player-piece" playerId="player3" piece="2">
                 <div class="border hidden"></div>
                 <div class="piece">
                   <img src="./assets/blue.png" alt="" />
@@ -200,7 +200,7 @@
               </div>
             </div>
             <div class="piece-outer blue">
-              <div class="piece-inner">
+              <div class="player-piece" playerId="player3" piece="3">
                 <div class="border hidden"></div>
                 <div class="piece">
                   <img src="./assets/blue.png" alt="" />
@@ -208,7 +208,7 @@
               </div>
             </div>
             <div class="piece-outer blue">
-              <div class="piece-inner">
+              <div class="player-piece" playerId="player3" piece="4">
                 <div class="border hidden"></div>
                 <div class="piece">
                   <img src="./assets/blue.png" alt="" />
@@ -223,7 +223,7 @@
         <div class="player-4">
           <div class="player-pieces">
             <div class="piece-outer yellow">
-              <div class="piece-inner" id="player4-piece1" onclick="openPlayerPiece('player4-piece1')">
+              <div class="player-piece" playerId="player4" piece="1">
                 <div class="border hidden"></div>
                 <div class="piece cursor-pointer">
                   <img src="./assets/yellow.png" alt="" />
@@ -231,7 +231,7 @@
               </div>
             </div>
             <div class="piece-outer yellow">
-              <div class="piece-inner" id="player4-piece1" onclick="openPlayerPiece('player4-piece2')">
+              <div class="player-piece" playerId="player4" piece="2">
                 <div class="border hidden"></div>
                 <div class="piece cursor-pointer">
                   <img src="./assets/yellow.png" alt="" />
@@ -239,7 +239,7 @@
               </div>
             </div>
             <div class="piece-outer yellow">
-              <div class="piece-inner" id="player4-piece1" onclick="openPlayerPiece('player4-piece3')">
+              <div class="player-piece" playerId="player4" piece="3">
                 <div class="border hidden"></div>
                 <div class="piece cursor-pointer">
                   <img src="./assets/yellow.png" alt="" />
@@ -247,7 +247,7 @@
               </div>
             </div>
             <div class="piece-outer yellow">
-              <div class="piece-inner" id="player4-piece1" onclick="openPlayerPiece('player4-piece2')">
+              <div class="player-piece" playerId="player4" piece="4">
                 <div class="border hidden"></div>
                 <div class="piece cursor-pointer">
                   <img src="./assets/yellow.png" alt="" />
@@ -280,7 +280,7 @@
       </div>
       <div class="dice-area">
         <div class="grid-item">
-          <div class="player-1-dice flex">
+          <div class="player-3-dice flex">
             <div class="dummy-piece-wrapper">
               <div class="dummy-piece">
                 <img src="./assets/blue.png" alt="" />
@@ -290,14 +290,15 @@
               </audio>
             </div>
             <div class="dice-wrapper cursor-pointer">
-              <img src="./assets/dice-6.png" alt="" />
+              <img src="./assets/dice-6.png" alt="" class="dice-btn" diceplayerid="player3"/>
             </div>
           </div>
         </div>
+        <!-- onclick="spinDice('yellow')" -->
         <div class="grid-item">
-          <div class="player-2-dice flex">
-            <div class="dice-wrapper cursor-pointer" onclick="spinDice('yellow')">
-              <img src="./assets/dice-5.png" alt="" id="player4" />
+          <div class="player-4-dice flex">
+            <div class="dice-wrapper cursor-pointer">
+              <img src="./assets/dice-5.png" alt="" class="dice-btn" diceplayerid="player4"/>
             </div>
             <div class="dummy-piece-wrapper">
               <div class="dummy-piece">
@@ -308,14 +309,9 @@
         </div>
       </div>
     </div>
-    <script src="./script/dice.js"></script>
-    <!-- <script>
-      $step = document.getElementsByClassName("step");
-      for(var i = 0; $step.length; i++) {
-        if ($step[i].textContent.includes("hh")) {
-        $step[i].innerHTML = ""
-        }
-      }
-    </script> -->
+    <script type="module" src="./script/ludo.js"></script>
+    <script type="module" src="./script/UI.js" ></script>
+    <script type="module" src="./script/constants.js"></script>
+    <script type="module" src="./script/main.js"></script>
   </body>
 </html>

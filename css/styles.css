@@ -121,10 +121,18 @@ body {
 
 /* Player piece start  */
 
-.piece {
-    position: relative;
-    bottom: 1.2vmin;
-  
+.player-pieces {
+    height: 4vmin;
+    width: 4vmin;
+    display: grid;
+    background-color: var(--white);
+    outline: 1px solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .piece-outer {
@@ -138,7 +146,7 @@ body {
     border: 1px solid rgba(0,0,0,0.5);
 }
 
-.piece-inner {
+.player-piece {
     width: 100%;
     height: 100%;
     display: flex;
@@ -146,18 +154,10 @@ body {
     align-items: center;
 }
 
-.player-pieces {
-    height: 4vmin;
-    width: 4vmin;
-    display: grid;
-    background-color: var(--white);
-    outline: 1px solid;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+.piece {
+    position: relative;
+    bottom: 1.2vmin;
+  
 }
 
 .piece img {
@@ -290,6 +290,10 @@ body {
 .grid-item {
     /* border: 1px solid black; */
     padding: 1vmin;
+}
+
+.d-none {
+    display: none;
 }
 
 /* Utilities End */
